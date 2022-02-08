@@ -1,3 +1,6 @@
+## Laravel 8 From Scratch
+Creating Blog on Laravel 8 via <a href="https://laracasts.com/series/laravel-8-from-scratch">https://laracasts.com/series/laravel-8-from-scratch</a>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
