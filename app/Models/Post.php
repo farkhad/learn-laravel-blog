@@ -12,6 +12,14 @@ class Post extends Model
     // avoid n+1 problem
     protected $with = ['category', 'author'];
 
+    public function scopeFilter($query, array $filters) // Post::newQuery->filter()
+    {
+        $query->when($filters['search'] ?? false, fn($query, $search) =>
+            $query->where('title', 'like', '%' . $search . '%')
+                ->orWhere('body', 'like', '%' . $search . '%')
+        );
+    }
+
     public function category()
     {
         // hasOne, hasMany, belongsTo, belongsToMany
