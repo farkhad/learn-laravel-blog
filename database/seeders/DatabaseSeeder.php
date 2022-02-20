@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
         $users = User::factory(3)->create();
         $categories = Category::factory(3)->create();
 
-        Post::factory(4)->create(fn() => [
+        Post::factory(30)->create(fn() => [
             'user_id' => $users->random(),
             'category_id' => $categories->random()
         ]);
