@@ -26,8 +26,8 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         // nice solution from comments https://laracasts.com/series/laravel-8-from-scratch/episodes/28
-        $users = User::factory(3)->create();
-        $categories = Category::factory(3)->create();
+        $users = User::factory(10)->create();
+        $categories = Category::factory(10)->create();
 
         Post::factory(30)->create(fn() => [
             'user_id' => $users->random(),
