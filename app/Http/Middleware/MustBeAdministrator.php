@@ -20,7 +20,7 @@ class MustBeAdministrator
         if (auth()->guest()) {
             abort(Response::HTTP_FORBIDDEN);
         }
-        if (auth()->user()->username !== 'csauer') {
+        if (auth()->user()->username !== 'farkhad') {
             // PHP 8: auth()->user()?->username !== 'csauer'
             abort(Response::HTTP_FORBIDDEN);
         }
